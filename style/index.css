@@ -1,3 +1,16 @@
 span {
   color: aqua;
 }
+#click {
+  background-color: #4caf50;
+  border: 2px solid #4caf50;
+  padding: 10px 15px;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.fruits {
+  list-style: none;
+  font-size: larger;
+  font-weight: 700;
+}
