@@ -27,3 +27,10 @@ span {
   color: #fff;
   cursor: pointer;
 }
+.one {
+  background: #a4cea6;
+  padding: 80px 0px;
+}
+.card {
+  margin-bottom: 20px;
+}
