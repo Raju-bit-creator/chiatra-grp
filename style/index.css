@@ -31,8 +31,9 @@ span {
   background: #a4cea6;
   padding: 80px 0px;
 }
-.card {
-  margin-bottom: 20px;
+.xyz {
+  padding: 20px;
+  background: #fff;
 }
 .header-content {
   display: flex;
@@ -47,4 +48,7 @@ span {
 }
 nav {
   background: aliceblue;
+}
+.list a {
+  text-decoration: none;
 }
