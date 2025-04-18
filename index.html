@@ -8,6 +8,15 @@
     <!-- css link  -->
     <link rel="stylesheet" href="./style/index.css" />
 
+    <!-- fontawesome link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- bootstrap  -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -29,7 +38,7 @@
             alt="logo image"
           />
           <ul class="list">
-            <li>Home</li>
+            <li><i class="fa fa-home" aria-hidden="true"></i> Home</li>
             <a href="./about.html"> <li>About</li></a>
             <li>Services</li>
             <li>Contact</li>
@@ -108,7 +117,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="xyz">
+            <!-- <div class="xyz">
               <img
                 src="./assets/bulldog.jpg"
                 class="img-fluid"
@@ -122,6 +131,18 @@
                 Vel nisi error, omnis ratione expedita nostrum?
               </p>
               <button class="btn btn-primary">Add to cart</button>
+            </div> -->
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card">
+                  <img src="./assets/bulldog.jpg" class="card-img-top" alt="" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <img src="./assets/bulldog.jpg" class="card-img-top" alt="" />
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-6">
@@ -178,6 +199,56 @@
         </div>
       </div>
     </section>
+    <section class="section-two">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label class="form-label">name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter your name"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+              <div class="mb-3 form-check">
+                <input
+                  type="checkbox"
+                  class="form-check-input"
+                  id="exampleCheck1"
+                />
+                <label class="form-check-label" for="exampleCheck1"
+                  >Check me out</label
+                >
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <img
+              class="image-fluid"
+              src="./assets/bulldog.jpg"
+              alt="dog image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
     <div class="container"><h2>we are chaitra group</h2></div>
     <div class="container">
       <h1>we are <span>chaitra</span> group</h1>
@@ -215,6 +286,7 @@
       </ol>
       <img src="./assets/bulldog.jpg " alt="bulldog" height="300" width="300" />
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha383-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT3GN1R8p"
