@@ -70,3 +70,47 @@ nav {
   position: relative;
   z-index: 11;
 }
+.hero-section-text {
+  margin-bottom: 150px !important;
+}
+.hero-section-text h5 {
+  font-size: 44px;
+}
+.social-links {
+  background: #cac7c7;
+  text-align: center;
+  padding: 20px;
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.six {
+  background: #a4cea6;
+  padding: 80px 0px;
+  position: relative;
+  z-index: 10;
+}
+.six:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100px;
+  background: #c0e81d;
+}
+.six::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100px;
+  background: #041505;
+}
+.six h4 {
+  position: absolute;
+}
+.hello-after {
+  z-index: 111;
+  color: #fff;
+}
