@@ -72,6 +72,8 @@ nav {
 }
 .hero-section-text {
   margin-bottom: 150px !important;
+  font-family: "Poppins";
+  font-weight: 700;
 }
 .hero-section-text h5 {
   font-size: 44px;
@@ -87,15 +89,16 @@ nav {
 }
 .six {
   background: #a4cea6;
-  padding: 80px 0px;
+  /* padding: 80px 0px; */
   position: relative;
   z-index: 10;
+  margin-bottom: 100px;
 }
 .six:before {
   content: "";
   position: absolute;
   left: 0;
-  width: 50%;
+  width: 90%;
   height: 100px;
   background: #c0e81d;
 }
@@ -103,7 +106,7 @@ nav {
   content: "";
   position: absolute;
   right: 0;
-  width: 50%;
+  width: 10%;
   height: 100px;
   background: #041505;
 }
@@ -113,4 +116,31 @@ nav {
 .hello-after {
   z-index: 111;
   color: #fff;
+}
+.map {
+  padding: 80px 0px 80px 0px;
+}
+
+/* media query */
+
+@media only screen and (max-width: 1024px) {
+}
+@media only screen and (max-width: 920px) {
+  .xyz1 {
+    margin-top: -50px;
+  }
+  .hero-section-text {
+    margin-bottom: 50px !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  span {
+    color: coral;
+  }
+  .fruits {
+    display: none;
+  }
+  .xyz1 {
+    margin-top: inherit;
+  }
 }
