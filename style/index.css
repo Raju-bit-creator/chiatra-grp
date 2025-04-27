@@ -120,6 +120,26 @@ nav {
 .map {
   padding: 80px 0px 80px 0px;
 }
+.info {
+  padding: 10px 0px;
+}
+.icons {
+  color: #d5831e;
+}
+.info-content {
+  display: flex;
+}
+.info-icon {
+  margin-right: 20px;
+  margin-top: 15px;
+}
+.info-icon .fa-solid {
+  font-size: 40px;
+}
+.info-details {
+  display: flex;
+  justify-content: space-between;
+}
 
 /* media query */
 
@@ -142,5 +162,9 @@ nav {
   }
   .xyz1 {
     margin-top: inherit;
+  }
+  .info-details {
+    /* display: block !important; */
+    display: none;
   }
 }
