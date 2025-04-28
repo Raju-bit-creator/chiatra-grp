@@ -4,5 +4,5 @@
 // let conf = confirm("are you sure?");
 // console.log("this is confirm", conf);
 
-let prm = prompt("enter your favourite number");
-console.log("you enter number ", prm);
+// let prm = prompt("enter your favourite number");
+// console.log("you enter number ", prm);
