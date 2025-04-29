@@ -34,3 +34,9 @@ const e = 40;
   console.log("vlaue of block d is", d);
 }
 console.log("vlaue of global d is", d);
+
+//naming
+const name = "ramesh";
+let title = "js";
+
+let number = 40;
