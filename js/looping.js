@@ -93,3 +93,5 @@ filterNum.map((n) => {
   console.log("thsi filter number multiplication", n * 2);
 });
 // how to keep filter number multiplication in a array
+
+
