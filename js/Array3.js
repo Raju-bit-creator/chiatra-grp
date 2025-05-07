@@ -52,3 +52,6 @@ const cartItems1 = [
     price: 6000,
   },
 ];
+
+const totla11 = cartItems1.reduce((acc, cur) => acc + cur.price, 0);
+console.log("this is total", totla11);
