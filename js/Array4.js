@@ -85,8 +85,8 @@ const countries = [
     countryCode: "CA",
   },
   {
-    name: "Germany",
-    countryCode: "DE",
+    name: "Germany ",
+    countryCode: "GR",
   },
   {
     name: "Nepal",
@@ -102,13 +102,77 @@ const countries = [
 
 const getCountryCode = (countryName) => {
   let country = countries.find(
-    (c) => c.name.toLocaleLowerCase() === countryName
+    (c) => c.name.toLocaleLowerCase().trim() === countryName.trim()
   );
   if (country) {
     return country.countryCode;
   } else {
-    return "Country Not Found";
+    return "Country code Not Found";
   }
 };
-let shortCode = getCountryCode("nepal");
+let shortCode = getCountryCode(" germany ");
 console.log(shortCode);
+
+let User = [
+  {
+    name: "Sanjaya",
+    age: 25,
+    email: "sanjaya@gmail.com",
+    password: "sanjaya123",
+  },
+  "shyam",
+  "santosh",
+  "ajaya",
+  "bijaya",
+  "sita",
+  "gita",
+  "rita",
+];
+
+// if name availabel in array  your are register user oterwise not register user
+const isUserRegistered = (username) => {
+  let user = User.find((u) => u === username.toLocaleLowerCase());
+  if (user) {
+    return "User is already registered";
+  } else {
+    return "User is not registered";
+  }
+};
+
+const userName = isUserRegistered("sanjaya");
+console.log(userName);
+
+let User1 = [
+  {
+    name: "Sanjaya",
+    age: 25,
+    email: "sanjaya@gmail.com",
+    password: "sanjaya123",
+  },
+  { name: "shyam", age: 25, email: "shyam@gmail.com", password: "shyam123" },
+  "santosh",
+  "ajaya",
+  "bijaya",
+  "sita",
+  "gita",
+  "rita",
+];
+// find the email of user sanjaya
+const findUserEmail = (username) => {
+  let user = User1.find((u) => u.name.toLocaleLowerCase() === username);
+  if (user) {
+    return user.name;
+  } else {
+    return "User not found";
+  }
+};
+// find the email of user sanjaya
+const sanjaya = findUserEmail("shyam");
+console.log(sanjaya);
+
+const product = [
+  { title: "labtop", price: 4000, quantity: 10 },
+  { title: "mobile", price: 3000, quantity: 20 },
+  { title: "watch", price: 2000, quantity: 30 },
+  { title: "wallet", price: 1000, quantity: 30 },
+];
