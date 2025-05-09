@@ -176,3 +176,38 @@ const product = [
   { title: "watch", price: 2000, quantity: 30 },
   { title: "wallet", price: 1000, quantity: 30 },
 ];
+// find the product with price 3000
+const findProduct = (price) => {
+  let productNew = product.find((p) => {
+    return p.price === price;
+  });
+  if (productNew) {
+    console.log("yes there is product ");
+  } else {
+    console.log("not availabel");
+  }
+};
+findProduct(7000);
+
+const sentence = "I am a software developer";
+const words = sentence.split(" ");
+const totalWord = words.length;
+console.log(totalWord);
+
+let user = {
+  name: "sanjaya",
+  age: 25,
+  email: "sanjaya@gmail.com",
+  password: "sanjaya123",
+};
+let name1 = user.name;
+console.log(name1);
+
+let stringUser = JSON.stringify(user);
+console.log(stringUser);
+// to access the name of stringUser
+const name2 = stringUser.name;
+console.log(name2);
+let parsedUser = JSON.parse(stringUser);
+const name3 = parsedUser.name;
+console.log(name3);
