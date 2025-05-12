@@ -41,13 +41,13 @@ users.map((user) => {
 });
 
 const User1 = [
-  // {
-  //   name: "Ramesh",
-  //   age: 25,
-  //   address: "kathmandu",
-  //   email: "ramesh@gmail.com",
-  //   password: "1234",
-  // },
+  {
+    name: "Ramesh",
+    age: 25,
+    address: "kathmandu",
+    email: "ramesh@gmail.com",
+    password: "1234",
+  },
   "Dinesh",
   "ram",
   "shyam",
@@ -65,4 +65,26 @@ const resgisterUser = (name) => {
     console.log(`${name} is not registered`);
   }
 };
-resgisterUser("ramesh");
+resgisterUser("Ramesh");
+
+let accoutNumber = "123456789123565678";
+
+// how to mask accoutNumber
+function maskedAccNumber(accoutNumber) {
+  let lastFour = accoutNumber.slice(-4);
+  let maskedPart = "*".repeat(accoutNumber.length - 4);
+  return maskedPart + lastFour;
+}
+let final = maskedAccNumber(accoutNumber);
+console.log(final);
+
+let phonNumber = 9800073456;
+// how to mask phonNumber
+function maskedPhoneNumber(phonNumber) {
+  let lastFour = phonNumber.toString().slice(-4);
+  let maskedPart = "*".repeat(phonNumber.toString().length - 4);
+  return maskedPart + lastFour;
+}
+
+let finalPhon = maskedPhoneNumber(phonNumber);
+console.log(finalPhon);

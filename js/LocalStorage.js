@@ -21,3 +21,11 @@ console.log("user from local storage", userName);
 let parseUser = JSON.parse(userObj);
 let parseName = parseUser.name;
 console.log("parse user from local storage", parseName);
+
+// fetchuser function
+// const fetchUser = () => {
+//   const response = fetch("https://reqres.in/api/users");
+// };
+fetch("https://jsonplaceholder.typicode.com/todos/6")
+  .then((response) => response.json())
+  .then((json) => console.log("this is response from real api", json));
